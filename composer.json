@@ -1,0 +1,17 @@
+{
+	"name": "moldedjelly/cakephp-datastore",
+	"description": "Datastore plugin for CakePHP",
+  "version": "dev-master",
+	"type": "cakephp-plugin",
+	"license": "MIT",
+	"require": {
+		"php": ">=5.5",
+		"cakephp/cakephp": "^3.3",
+		"tomwalder/php-gds": "3.0.*"
+	},
+	"autoload": {
+		"psr-4": {
+			"Datastore\\": "src"
+		}
+	}
+}
