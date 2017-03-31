@@ -20,12 +20,12 @@ class Config {
      *
      * @return array
      */
-    public function getConfigString()
+    public function getConfigString($defaultValue="")
     {
         $obj_store = $this->getStore();
         $configObj = $obj_store->query("SELECT * FROM DBConfig")->fetchOne();
         if (empty($configObj)) {
-          $this->createRecord(GDS_BASE_INIT);
+          $this->createRecord($defaultValue);
           $configObj = $obj_store->query("SELECT * FROM DBConfig")->fetchOne();
         }
         return $configObj->configString;
