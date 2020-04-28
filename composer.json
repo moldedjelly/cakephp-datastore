@@ -7,7 +7,7 @@
 	"require": {
 		"php": ">=5.5",
 		"cakephp/cakephp": "^3.3",
-		"tomwalder/php-gds": "3.0.*"
+		"tomwalder/php-gds": "3.*"
 	},
 	"autoload": {
 		"psr-4": {
