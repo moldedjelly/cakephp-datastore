@@ -61,13 +61,6 @@ class Config {
      */
     private function getStore()
     {
-/*
-        if(NULL === $this->obj_store) {
-            $obj_google_client = \GDS\Gateway::createGoogleClient(GDS_APP_ID, GDS_ACCOUNT, GDS_KEY_FILE);
-            $obj_gateway = new \GDS\Gateway($obj_google_client, GDS_APP_ID);
-            $this->obj_store = new \GDS\Store($obj_gateway, $this->makeSchema());
-        }
-*/
         if(NULL === $this->obj_store) {
             $this->obj_store = new \GDS\Store($this->makeSchema());
         }
